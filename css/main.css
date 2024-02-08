@@ -1,0 +1,435 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa&family=Gloria+Hallelujah&family=Lobster&family=Mali&family=Noto+Serif+Display&family=Pacifico&family=Permanent+Marker&family=Press+Start+2P&family=Redressed&family=Satisfy&display=swap");
+/* Fuentes */
+* {
+  color: #f1f1f1;
+  margin: 0;
+}
+
+body {
+  background-color: #d9d9d9;
+}
+
+header,
+section {
+  padding: 0 6rem;
+}
+
+.header {
+  background-color: #1f1f1f;
+  height: 100vh;
+}
+
+.header .nav {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-style: "Libre Baskerville", serif;
+  font-size: 24px;
+  text-transform: capitalize;
+  font-weight: 700;
+}
+
+.header .nav .logo {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.header .nav .logo img {
+  width: 20px;
+  height: 20px;
+}
+
+.header .nav .logo .name {
+  margin: 1.7rem 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.header .nav .items {
+  margin: 1.7rem 0;
+}
+
+.header .nav .items ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header .nav .items ul li {
+  padding-left: 10rem;
+}
+
+.header .nav .items ul li a {
+  text-decoration: none;
+}
+
+.header .start {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "Roboto Slab", serif;
+  margin-top: 6%;
+}
+
+.header .start .title-home {
+  position: relative;
+  margin: 0 -2rem 0 7rem;
+}
+
+.header .start .title-home h1 {
+  font-size: 64px;
+  line-height: 84, 41px;
+  position: relative;
+  width: 600px;
+  height: 168px;
+}
+
+.header .start .title-home p {
+  position: absolute;
+  width: 495px;
+  height: 138px;
+  font-weight: 300;
+  font-size: 26px;
+  line-height: 33px;
+}
+
+.header .start .slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header .start .slider img {
+  height: 450px;
+  width: 450px;
+}
+
+/* Store */
+.article-store article {
+  position: relative;
+  width: 100%;
+  height: 235px;
+  margin-top: 80px;
+  background-image: url(../img/pexels-josé-andrés-pacheco-cortes-5862696.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.article-store article p {
+  width: 923px;
+  height: 120px;
+  margin-left: 3rem;
+  font-family: "Libre Baskerville", serif;
+  font-style: normal;
+  font-size: 48px;
+  line-height: 60px;
+}
+
+.article-store .all {
+  font-family: "Libre Baskerville", serif;
+  color: #1f1f1f;
+  text-decoration: none;
+  text-transform: capitalize;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  margin: 80px 0 20px 0;
+}
+
+.article-store .container-store {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.article-store .container-store .card {
+  background-color: rgba(51, 51, 51, 0.8);
+  width: 300px;
+  font-family: "Roboto Slab", serif;
+}
+
+.article-store .container-store .card .img img {
+  width: 300px;
+  height: 360px;
+}
+
+.article-store .container-store .card .info {
+  font-family: "Roboto Slab", serif;
+  width: 250px;
+  height: 112px;
+  margin: 0.5rem 1rem;
+}
+
+.article-store .container-store .card .info h2 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.article-store .container-store .card .info p {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
+  margin-bottom: 0.8rem;
+}
+
+.article-store .container-store .card .info .money {
+  text-transform: uppercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.article-store .container-store .card .info .money .add-cart {
+  background-color: #f1f1f1;
+  padding: 0.2rem;
+  border-radius: 50%;
+  position: relative;
+  top: -10px;
+}
+
+.article-store .container-store .card .info .money .add-cart a {
+  position: relative;
+  top: 2px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer {
+  margin: 0;
+  background-color: #1f1f1f;
+  margin-top: 80px;
+  height: 300px;
+  font-family: "Roboto Slab", serif;
+}
+
+footer .footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .footer .contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 6rem;
+}
+
+footer .footer .contact p {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+footer .footer .contact ul {
+  list-style: none;
+  position: relative;
+  left: -2.5rem;
+}
+
+footer .footer .contact ul li {
+  margin: 0.5rem 0;
+}
+
+footer .footer .contact ul li a {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 18px;
+  text-decoration: none;
+}
+
+footer .footer .contact ul li a svg {
+  position: relative;
+  bottom: -5px;
+}
+
+footer .footer .footer-img {
+  background-image: url(../img/pexels-tiff-ng-3700247.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 720px;
+  height: 300px;
+}
+
+footer .footer .image {
+  padding: 150px;
+  background-image: url(../icon/logo.ico);
+  background-repeat: no-repeat;
+  background-size: 75%;
+  background-position: center;
+}
+
+.copyright {
+  background-color: #333333;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1rem;
+  font-family: "Roboto Slab", serif;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.copyright span {
+  color: rgba(241, 241, 241, 0.7);
+}
+
+.flip-vertical-left {
+  -webkit-animation: flip-vertical-left 0.9s cubic-bezier(0.455, 0.03, 0.515, 0.955) 1s infinite alternate both;
+  animation: flip-vertical-left 0.9s cubic-bezier(0.455, 0.03, 0.515, 0.955) 1s infinite alternate both;
+}
+
+/* ----------------------------------------------
+ * Generated by Animista on 2022-2-25 13:23:41
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+/**
+ * ----------------------------------------
+ * animation flip-vertical-left
+ * ----------------------------------------
+ */
+@-webkit-keyframes flip-vertical-left {
+  0% {
+    -webkit-transform: rotateY(0);
+    transform: rotateY(0);
+  }
+  100% {
+    -webkit-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+  }
+}
+
+@keyframes flip-vertical-left {
+  0% {
+    -webkit-transform: rotateY(0);
+    transform: rotateY(0);
+  }
+  100% {
+    -webkit-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+  }
+}
+
+.text-efect {
+  position: absolute;
+  font-size: 64px;
+  font-weight: 400;
+  line-height: 84, 41px;
+  letter-spacing: 1rem;
+  top: 2.8rem;
+  left: 36rem;
+  text-transform: capitalize;
+  letter-spacing: 0.7rem;
+}
+
+/* @keyframes letras {
+  10% {
+    font-family: $font-family1;
+    line-height: 84,41px;
+    font-weight: 400;
+  }
+  20% {
+    font-family: $font-family2;
+    line-height: 84,41px;
+    font-weight: 400;
+  }
+  30% {
+    font-family: $font-family3;
+    line-height: 84,41px;
+    font-weight: 400;
+  }
+  40% {
+    font-family: $font-family4;
+    line-height: 84,41px;
+    font-weight: 400;
+  }
+  50% {
+    font-family: $font-family5;
+    line-height: 84,41px;
+    font-weight: 400;
+  }
+  60% {
+    font-family: $font-family6;
+    line-height: 84,41px;
+    font-weight: 400;
+  }
+  70% {
+    font-family: $font-family7;
+    line-height: 84,41px;
+    font-weight: 400;
+  }
+  80% {
+    font-family: $font-family8;
+    line-height: 84,41px;
+    font-weight: 400;
+  }
+  90% {
+    font-family: $font-family9;
+    line-height: 84,41px;
+    font-weight: 400;
+  }
+  100% {
+    font-family: $font-family0;
+    line-height: 84,41px;
+    font-weight: 400;
+  }
+
+} */
+/*# sourceMappingURL=main.css.map */

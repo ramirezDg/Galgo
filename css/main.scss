@@ -1,0 +1,370 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa&family=Gloria+Hallelujah&family=Lobster&family=Mali&family=Noto+Serif+Display&family=Pacifico&family=Permanent+Marker&family=Press+Start+2P&family=Redressed&family=Satisfy&display=swap");
+
+$fondo: #d9d9d9;
+$white: #f1f1f1;
+$black: #1f1f1f;
+$Slab: "Roboto Slab", serif;
+$Libre: "Libre Baskerville", serif;
+
+/* Fuentes */
+
+$font-family1: "Comfortaa", cursive;
+$font-family2: "Gloria Hallelujah", cursive;
+$font-family3: "Lobster", cursive;
+$font-family4: "Noto Serif Display", serif;
+$font-family5: "Pacifico", cursive;
+$font-family6: "Permanent Marker", cursive;
+$font-family7: "Mali", cursive;
+$font-family8: "Redressed", cursive;
+$font-family9: "Satisfy", cursive;
+$font-family0: "Cartograph CF", italic;
+
+* {
+  color: $white;
+  margin: 0;
+}
+
+body {
+  background-color: $fondo;
+}
+header,
+section {
+  padding: 0 6rem;
+}
+.header {
+  background-color: $black;
+  height: 100vh;
+  .nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-style: $Libre;
+    font-size: 24px;
+    text-transform: capitalize;
+    font-weight: 700;
+    .logo {
+      display: inline-flex;
+      img {
+        width: 20px;
+        height: 20px;
+      }
+      .name {
+        margin: 1.7rem 0;
+        user-select: none;
+      }
+    }
+    .items {
+      margin: 1.7rem 0;
+      ul {
+        list-style: none;
+        display: flex;
+        li {
+          padding-left: 10rem;
+          a {
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+  .start {
+    display: flex;
+    font-family: $Slab;
+    margin-top: 6%;
+    .title-home {
+      position: relative;
+      margin: 0 -2rem 0 7rem;
+      h1 {
+        font-size: 64px;
+        line-height: 84, 41px;
+        position: relative;
+        width: 600px;
+        height: 168px;
+      }
+      p {
+        position: absolute;
+        width: 495px;
+        height: 138px;
+        font-weight: 300;
+        font-size: 26px;
+        line-height: 33px;
+      }
+    }
+    .slider {
+      display: flex;
+      img {
+        height: 450px;
+        width: 450px;
+      }
+    }
+  }
+}
+/* Store */
+.article-store {
+  article {
+    position: relative;
+    width: 100%;
+    height: 235px;
+    margin-top: 80px;
+
+    background-image: url(../img/pexels-josé-andrés-pacheco-cortes-5862696.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: grayscale(100%);
+
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+    p {
+      width: 923px;
+      height: 120px;
+      margin-left: 3rem;
+
+      font-family: $Libre;
+      font-style: normal;
+      font-size: 48px;
+      line-height: 60px;
+    }
+  }
+  .all {
+    font-family: $Libre;
+    color: $black;
+    text-decoration: none;
+    text-transform: capitalize;
+
+    display: flex;
+    justify-content: right;
+    margin: 80px 0 20px 0;
+  }
+  .container-store {
+    display: flex;
+    justify-content: space-between;
+    .card {
+      background-color: rgba($color: #333333, $alpha: 0.8);
+      width: 300px;
+
+      font-family: $Slab;
+      .img {
+        img {
+          width: 300px;
+          height: 360px;
+        }
+      }
+      .info {
+        font-family: $Slab;
+        width: 250px;
+        height: 112px;
+        margin: 0.5rem 1rem;
+        h2 {
+          font-style: normal;
+          font-weight: 500;
+          font-size: 24px;
+          line-height: 32px;
+        }
+        p {
+          font-weight: 300;
+          font-size: 14px;
+          line-height: 16px;
+          margin-bottom: 0.8rem;
+        }
+        .money {
+          text-transform: uppercase;
+          display: flex;
+          justify-content: space-between;
+          .add-cart {
+            background-color: $white;
+            padding: 0.2rem;
+            border-radius: 50%;
+            position: relative;
+            top: -10px;
+            a {
+              position: relative;
+              top: 2px;
+              align-items: center;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+footer {
+  margin: 0;
+  background-color: $black;
+  margin-top: 80px;
+  height: 300px;
+  font-family: $Slab;
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    .contact {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      margin-left: 6rem;
+      p {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+      }
+      ul {
+        list-style: none;
+        position: relative;
+        left: -2.5rem;
+        li {
+          margin: 0.5rem 0;
+          a {
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 18px;
+            text-decoration: none;
+            svg {
+              position: relative;
+              bottom: -5px;
+            }
+          }
+        }
+      }
+    }
+    .footer-img {
+      background-image: url(../img/pexels-tiff-ng-3700247.jpg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 720px;
+      height: 300px;
+    }
+    .image {
+      padding: 150px;
+      background-image: url(../icon/logo.ico);
+      background-repeat: no-repeat;
+      background-size: 75%;
+      background-position: center;
+    }
+  }
+}
+
+.copyright {
+  background-color: #333333;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  padding: 1rem;
+
+  font-family: $Slab;
+  user-select: none;
+  span {
+    color: rgba($color: $white, $alpha: 0.7);
+  }
+}
+
+.flip-vertical-left {
+  -webkit-animation: flip-vertical-left 0.9s cubic-bezier(0.455, 0.03, 0.515, 0.955) 1s infinite alternate both;
+  animation: flip-vertical-left 0.9s cubic-bezier(0.455, 0.03, 0.515, 0.955) 1s infinite alternate both;
+}
+
+/* ----------------------------------------------
+ * Generated by Animista on 2022-2-25 13:23:41
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation flip-vertical-left
+ * ----------------------------------------
+ */
+@-webkit-keyframes flip-vertical-left {
+  0% {
+    -webkit-transform: rotateY(0);
+    transform: rotateY(0);
+  }
+  100% {
+    -webkit-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+  }
+}
+@keyframes flip-vertical-left {
+  0% {
+    -webkit-transform: rotateY(0);
+    transform: rotateY(0);
+  }
+  100% {
+    -webkit-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+  }
+}
+
+.text-efect {
+  position: absolute;
+  font-size: 64px;
+  font-weight: 400;
+  line-height: 84, 41px;
+  letter-spacing: 1rem;
+
+  top: 2.8rem;
+  left: 36rem;
+
+  text-transform: capitalize;
+  letter-spacing: 0.7rem;
+  // animation: letras 4s 2s infinite alternate both;
+}
+/* @keyframes letras {
+  10% {
+    font-family: $font-family1;
+    line-height: 84,41px;
+    font-weight: 400;
+  }
+  20% {
+    font-family: $font-family2;
+    line-height: 84,41px;
+    font-weight: 400;
+  }
+  30% {
+    font-family: $font-family3;
+    line-height: 84,41px;
+    font-weight: 400;
+  }
+  40% {
+    font-family: $font-family4;
+    line-height: 84,41px;
+    font-weight: 400;
+  }
+  50% {
+    font-family: $font-family5;
+    line-height: 84,41px;
+    font-weight: 400;
+  }
+  60% {
+    font-family: $font-family6;
+    line-height: 84,41px;
+    font-weight: 400;
+  }
+  70% {
+    font-family: $font-family7;
+    line-height: 84,41px;
+    font-weight: 400;
+  }
+  80% {
+    font-family: $font-family8;
+    line-height: 84,41px;
+    font-weight: 400;
+  }
+  90% {
+    font-family: $font-family9;
+    line-height: 84,41px;
+    font-weight: 400;
+  }
+  100% {
+    font-family: $font-family0;
+    line-height: 84,41px;
+    font-weight: 400;
+  }
+
+} */
